@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg,lightpink,crimson);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(169, 131, 138);
+    width: 300px;
+    height: 400px;
+    margin: 16px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.picture {
+    border: 1px solid crimson;
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    transform: translateY(25px);
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.picture:hover {
+    width: 90%;
+    height: 90%;
+    border: none;
+    border-radius: unset;
+    /* transform: unset; */
+}
+
+.picture img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    margin: 48px 0 0;
+    text-align: center;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+.detail {
+    color: crimson;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.icons i {
+    color: white;
+    font-size: 24px;
+    margin: 0 12px;
+}
+
+button {
+    margin: 24px 0;
+    cursor: pointer;
+    border: 2px solid crimson;
+    padding: 16px 24px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+button:hover {
+    background-color: crimson;
+    transform: scale(1.1);
+}
+button:active {
+    background-color: rgb(220, 20, 60, 0.75);
+}
+
+
+@media only screen and (max-width: 1023px) {
+    body {
+        display: block;
+        background: unset;
+        background-color: rgb(252, 97, 123);
+    }
+    .container {
+        margin: 16px auto;
+    }
+    footer {
+        height: 8px;
+    }
+}
